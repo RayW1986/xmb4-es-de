@@ -1,0 +1,297 @@
+<theme> 
+	<include>./navigationsounds.xml</include>
+	<include>${rootpath}/_inc/systems/metadata-global/_default.xml</include>
+	<include>${rootpath}/_inc/systems/metadata-global/${system.theme}.xml</include>
+	<variables>
+		<rootpath>./</rootpath>
+	</variables>
+	<view name="gamelist">
+		
+		<!-- OVERLAY ASSETS -->
+		<image name="overlay">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>${rootpath}/_inc/images/system_overlay.png</path>
+			
+			<zIndex>4</zIndex>
+		</image>
+		<image name="overlayMarquee">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>${rootpath}/_inc/images/system_overlay_marquee.png</path>
+			<zIndex>1</zIndex>
+		</image>
+		
+		<!-- PLAY OR BROWSE TEXT -->
+		<text name="playText">
+			<pos>0.025 0.315</pos>
+			<size>.58 .275</size>
+			<text>Play</text>
+			<fontSize>0.035</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Medium.ttf</fontPath>
+		</text>
+		
+		<!-- GAMELIST -->
+		<carousel name="gamelistCarousel">
+			<pos>0 0.01</pos>
+			<size>1 0.3</size>
+			<type>horizontal</type>
+			<horizontalOffset>-.4</horizontalOffset>
+			<maxItemCount>8.6</maxItemCount>
+			<imageInterpolation>linear</imageInterpolation>
+			<itemVerticalAlignment>center</itemVerticalAlignment>
+			<color>00000000</color>
+			<textColor>FFFFFF</textColor>
+			<fontSize>0.028</fontSize>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Light.ttf</fontPath>
+			<letterCase>uppercase</letterCase>
+			<textBackgroundColor>0F3594</textBackgroundColor>
+			<lineSpacing>1.1</lineSpacing>
+			<selectedItemMargins>.05 .028</selectedItemMargins>
+			<unfocusedItemOpacity>1</unfocusedItemOpacity>
+			<unfocusedItemDimming>.3</unfocusedItemDimming>
+			<fastScrolling>true</fastScrolling>
+			<itemTransitions>instant</itemTransitions>
+			<imageCornerRadius>0</imageCornerRadius>
+			<zIndex>3</zIndex>
+		</carousel>		
+		
+		<!-- GAME DETAILS -->
+		<text name="gameName">
+			<pos>0.21 0.3</pos>
+			<size>0.76 0.05</size>
+			<metadata>name</metadata>
+			<fontSize>0.05</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Medium.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<text name="gameSystem">
+			<pos>0.21 0.36</pos>
+			<size>0.76 0.05</size>
+			<metadata>sourceSystemFullname</metadata>
+			<fontSize>0.035</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Light.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<text name="gameDescription">
+			<pos>0.21 0.55</pos>
+			<size>.45 .375</size>
+			<metadata>description</metadata>
+			<fontSize>0.027</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Light.ttf</fontPath>
+			<container>true</container>
+		</text>
+		
+		<!-- GAME METADATA -->
+		<text name="textDeveloper">
+			<pos>0.21 0.42</pos>
+			<size>0.2 0.02</size>
+			<text>Developer</text>
+			<fontSize>0.02</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Bold.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<text name="metaDeveloper">
+			<pos>0.21 0.445</pos>
+			<size>0.2 0.02</size>
+			<metadata>developer</metadata>
+			<fontSize>0.02</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>C0C0C0</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Regular.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<text name="textPublisher">
+			<pos>0.21 0.48</pos>
+			<size>0.2 0.02</size>
+			<text>Publisher</text>
+			<fontSize>0.02</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Bold.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<text name="metaPublisher">
+			<pos>0.21 0.505</pos>
+			<size>0.2 0.02</size>
+			<metadata>publisher</metadata>
+			<fontSize>0.02</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>C0C0C0</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Regular.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<text name="textGenre">
+			<pos>0.45 0.42</pos>
+			<size>0.2 0.02</size>
+			<text>Genre</text>
+			<fontSize>0.02</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Bold.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<text name="metaGenre">
+			<pos>0.45 0.445</pos>
+			<size>0.2 0.02</size>
+			<metadata>genre</metadata>
+			<fontSize>0.02</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>C0C0C0</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Regular.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<text name="textFilename">
+			<pos>0.45 0.48</pos>
+			<size>0.2 0.02</size>
+			<text>Filename</text>
+			<fontSize>0.02</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Bold.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<text name="metaFilename">
+			<pos>0.45 0.505</pos>
+			<size>0.45 0.02</size>
+			<metadata>physicalNameExtension</metadata>
+			<fontSize>0.02</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>C0C0C0</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Regular.ttf</fontPath>
+			<container>false</container>
+		</text>
+		
+		<!-- BADGES -->
+		<badges name="badges">
+			<pos>0.47 0.42</pos>
+			<size>.5 .018</size>
+			<origin>0 0</origin>
+			<horizontalAlignment>right</horizontalAlignment>
+			<direction>row</direction>
+			<lines>1</lines>
+			<itemsPerLine>9</itemsPerLine>
+			<itemMargin>-1 .01</itemMargin>
+			<slots>collection, folder, favorite, completed, kidgame, broken, controller, altemulator, manual</slots>
+			<customBadgeIcon badge="collection">${rootpath}/_inc/images/icons/badge-collection.png</customBadgeIcon>
+			<customBadgeIcon badge="folder">${rootpath}/_inc/images/icons/badge-folder.png</customBadgeIcon>
+			<customBadgeIcon badge="favorite">${rootpath}/_inc/images/icons/badge-favorite.png</customBadgeIcon>
+			<customBadgeIcon badge="completed">${rootpath}/_inc/images/icons/badge-completed.png</customBadgeIcon>
+			<customBadgeIcon badge="kidgame">${rootpath}/_inc/images/icons/badge-kidgame.png</customBadgeIcon>
+			<customBadgeIcon badge="broken">${rootpath}/_inc/images/icons/badge-broken.png</customBadgeIcon>
+			<customBadgeIcon badge="controller">${rootpath}/_inc/images/icons/badge-controller.png</customBadgeIcon>
+			<customBadgeIcon badge="altemulator">${rootpath}/_inc/images/icons/badge-altemulator.png</customBadgeIcon>
+			<customBadgeIcon badge="manual">${rootpath}/_inc/images/icons/badge-manual.png</customBadgeIcon>
+			<controllerIconColor>FFFFFF</controllerIconColor>
+			<controllerSize>1</controllerSize>
+			<zIndex>65</zIndex>
+		</badges>
+		
+		<!-- MORE METADATA -->
+		<image name="imageYear">
+			<tile>false</tile>
+			<pos>0.025 0.555</pos>
+			<maxSize>.02 .03</maxSize>
+			<origin>0 0</origin>
+			<path>${rootpath}/_inc/images/icons/year.png</path>
+			<interpolation>linear</interpolation>
+		</image>			
+		<datetime name="metaYear">
+			<metadata>releasedate</metadata>
+			<pos>0.05 0.559</pos>
+			<size>0.4 0.18</size>
+			<fontSize>0.02</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Light.ttf</fontPath>
+		</datetime>		
+		<image name="imagePlayers">
+			<tile>false</tile>
+			<pos>0.025 0.605</pos>
+			<maxSize>.02 .03</maxSize>
+			<origin>0 0</origin>
+			<path>${rootpath}/_inc/images/icons/players.png</path>
+			<interpolation>linear</interpolation>
+		</image>			
+		<text name="metaPlayers">
+			<pos>0.05 0.609</pos>
+			<size>0.4 0.18</size>
+			<metadata>players</metadata>
+			<fontSize>0.02</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Light.ttf</fontPath>
+			<container>true</container>
+		</text>	
+		<image name="imageEmulator">
+			<tile>false</tile>
+			<pos>0.025 0.655</pos>
+			<maxSize>.02 .03</maxSize>
+			<origin>0 0</origin>
+			<path>${rootpath}/_inc/images/icons/emulator.png</path>
+			<interpolation>linear</interpolation>
+		</image>			
+		<text name="metaEmulator">
+			<pos>0.05 0.659</pos>
+			<size>0.125 0.03</size>
+			<metadata>emulator</metadata>
+			<fontSize>0.02</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Light.ttf</fontPath>
+			<container>false</container>
+		</text>	
+		<rating name="metaRating">
+			<pos>0.025 0.7055</pos>
+			<origin>0 0</origin>
+			<size>0 0.03</size>
+			<filledPath>${rootpath}/_inc/images/star_filled.svg</filledPath>
+			<unfilledPath>${rootpath}/_inc/images/star_unfilled.svg</unfilledPath>
+			<color>FFFFFF</color>
+			<zIndex>65</zIndex>
+		</rating>	
+		<gamelistinfo name="gamelistInfo">
+			<pos>0.025 0.754</pos>
+			<size>.58 .275</size>
+			<fontSize>0.025</fontSize>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Medium.ttf</fontPath>
+		</gamelistinfo>
+		<image name="systemLogo">
+			<tile>false</tile>
+			<pos>0.1 0.48</pos>
+			<origin>.5 .5</origin>
+			<maxSize>.15 .12</maxSize>
+			<path>${rootpath}/_inc/systems/logos/${system.theme}.svg</path>
+			<color>ffffff</color>
+			<interpolation>linear</interpolation>
+			<zIndex>50</zIndex>
+		</image>	
+	</view> 
+</theme>

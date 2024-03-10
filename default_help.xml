@@ -1,0 +1,23 @@
+<!--
+	Variant - Immersive
+-->
+
+<theme> 
+	<variables>
+		<rootpath>./</rootpath>
+	</variables>
+	<view name="system, gamelist">
+		<helpsystem name="help">
+			<pos>0.012 0.9515</pos>
+			<origin>0 0</origin>
+			<textColor>FFFFFF</textColor>
+			<iconColor>FFFFFF</iconColor>
+			<fontSize>0.025</fontSize>
+			<fontPath>${rootpath}/_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
+			<iconTextSpacing>0.003</iconTextSpacing>
+			<originDimmed>0.5 0</originDimmed>
+			<posDimmed>0.5 0.96</posDimmed>
+			<opacity>.7</opacity>
+		</helpsystem>
+	</view>
+</theme>

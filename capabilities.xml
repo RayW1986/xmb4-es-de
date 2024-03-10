@@ -1,0 +1,80 @@
+<!--
+	Theme capabilities for artflix-revisited-es-de
+-->
+
+<themeCapabilities>
+	<themeName>XMB4</themeName>
+
+	<!--<aspectRatio>16:9</aspectRatio>
+	<aspectRatio>16:10</aspectRatio>
+	<aspectRatio>19.5:9</aspectRatio>
+	<aspectRatio>4:3</aspectRatio>-->
+
+	<transitions name="slide">
+		<label>Slide</label>
+		<selectable>true</selectable>
+		<systemToSystem>instant</systemToSystem>
+		<systemToGamelist>slide</systemToGamelist>
+		<gamelistToGamelist>slide</gamelistToGamelist>
+		<gamelistToSystem>slide</gamelistToSystem>
+		<startupToSystem>slide</startupToSystem>
+	</transitions>
+	
+	<transitions name="instant">
+		<label>Instant</label>
+		<selectable>true</selectable>
+		<systemToSystem>instant</systemToSystem>
+		<systemToGamelist>instant</systemToGamelist>
+		<gamelistToGamelist>instant</gamelistToGamelist>
+		<gamelistToSystem>instant</gamelistToSystem>
+		<startupToSystem>instant</startupToSystem>
+	</transitions>
+	
+	<transitions name="fade">
+		<label>Fade</label>
+		<selectable>true</selectable>
+		<systemToSystem>instant</systemToSystem>
+		<systemToGamelist>fade</systemToGamelist>
+		<gamelistToGamelist>fade</gamelistToGamelist>
+		<gamelistToSystem>fade</gamelistToSystem>
+		<startupToSystem>fade</startupToSystem>
+	</transitions>
+	
+	<suppressTransitionProfiles>
+		<entry>builtin-instant</entry>
+		<entry>builtin-slide</entry>
+		<entry>builtin-fade</entry>
+	</suppressTransitionProfiles>
+	
+	<variant name="defaultTheme">
+		<label>Composite Marquee</label>
+		<selectable>true</selectable>
+		<transitions>slide</transitions>
+	</variant>
+	<variant name="coverTheme">
+		<label>Cropped Cover Marquee</label>
+		<selectable>true</selectable>
+		<transitions>slide</transitions>
+	</variant>
+	<variant name="simpleListTheme">
+		<label>Simple Gamelist</label>
+		<selectable>true</selectable>
+		<transitions>instant</transitions>
+	</variant>
+	<variant name="defaultTheme_VideoBG">
+		<label>Composite Marquee (Animated Background)</label>
+		<selectable>true</selectable>
+		<transitions>slide</transitions>
+	</variant>
+	<variant name="coverTheme_VideoBG">
+		<label>Cropped Cover Marquee (Animated Background)</label>
+		<selectable>true</selectable>
+		<transitions>slide</transitions>
+	</variant>
+	<variant name="simpleListTheme_VideoBG">
+		<label>Simple Gamelist (Animated Background)</label>
+		<selectable>true</selectable>
+		<transitions>instant</transitions>
+	</variant>
+	
+</themeCapabilities>

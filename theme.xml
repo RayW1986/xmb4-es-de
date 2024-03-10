@@ -1,0 +1,229 @@
+<theme>
+	
+	<variant name="defaultTheme">
+		<include>./variables.xml</include>
+		<include>./default_systems.xml</include>
+		<include>./default_gamelist.xml</include>
+		<include>./default_help.xml</include>
+		<view name="gamelist, system">
+			<image name="background">
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<path>${rootpath}/_inc/images/background.png</path>
+				<stationary>always</stationary>
+				<renderDuringTransitions>true</renderDuringTransitions>
+				<zIndex>0</zIndex>
+			</image>
+		</view>
+		<view name="gamelist">
+			<carousel name="gamelistCarousel">
+				<imageType>marquee</imageType>
+				<itemSize>0.105 0.2</itemSize>
+				<itemScale>1.3</itemScale>
+				<imageFit>contain</imageFit>
+			</carousel>
+			<image name="selectionCompositeBackground">
+				<pos>.017 .01</pos>
+				<cropSize>0.165 0.3</cropSize>
+				<imageType>fanart, screenshot, cover</imageType>
+				<zIndex>1</zIndex>
+			</image>
+			<image name="selectionCompositeOverlay">
+				<pos>.017 .01</pos>
+				<cropSize>0.165 0.3</cropSize>
+				<path>${rootpath}/_inc/images/screenshot_overlay.png</path>
+				<zIndex>2</zIndex>
+			</image>
+			<video name="metaVideo">
+				<pos>0.69 0.55</pos>
+				<size>.285 .36</size>
+				<origin>0 0</origin>
+				<imageType>miximage, screenshot, fanart, titlescreen</imageType>
+				<interpolation>linear</interpolation>
+				<gameselectorEntry>0</gameselectorEntry>
+				<scanlines>true</scanlines>
+				<delay>3</delay>
+				<zIndex>48</zIndex>
+			</video>
+		</view> 
+	</variant>
+	
+	<variant name="coverTheme">
+		<include>./variables.xml</include>
+		<include>./default_systems.xml</include>
+		<include>./default_gamelist.xml</include>
+		<include>./default_help.xml</include>
+		<view name="gamelist, system">
+			<image name="background">
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<path>${rootpath}/_inc/images/background.png</path>
+				<stationary>always</stationary>
+				<renderDuringTransitions>true</renderDuringTransitions>
+				<zIndex>0</zIndex>
+			</image>
+		</view>
+		<view name="gamelist">
+			<carousel name="gamelistCarousel">
+				<imageType>cover</imageType>
+				<itemSize>0.11 0.2</itemSize>
+				<itemScale>1.5</itemScale>
+				<imageFit>cover</imageFit>
+			</carousel>
+			<video name="metaVideo">
+				<pos>0.69 0.55</pos>
+				<size>.285 .36</size>
+				<origin>0 0</origin>
+				<imageType>miximage, screenshot, fanart, titlescreen</imageType>
+				<interpolation>linear</interpolation>
+				<gameselectorEntry>0</gameselectorEntry>
+				<scanlines>true</scanlines>
+				<delay>3</delay>
+				<zIndex>48</zIndex>
+			</video>
+		</view> 
+	</variant>
+	
+	<variant name="simpleListTheme">
+		<include>./variables.xml</include>
+		<include>./default_systems.xml</include>
+		<include>./simple_list_gamelist.xml</include>
+		<include>./simple_list_help.xml</include>
+		<view name="gamelist, system">
+			<image name="background">
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<path>${rootpath}/_inc/images/background.png</path>
+				<stationary>always</stationary>
+				<renderDuringTransitions>true</renderDuringTransitions>
+				<zIndex>0</zIndex>
+			</image>
+		</view>
+	</variant>
+	
+	<variant name="defaultTheme_VideoBG">
+		<include>./variables.xml</include>
+		<include>./default_systems.xml</include>
+		<include>./default_gamelist.xml</include>
+		<include>./default_help.xml</include>
+		<view name="gamelist, system">
+			<image name="systembackgroundoverlay">
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<path>${rootpath}/_inc/images/video_background.png</path>
+				<stationary>always</stationary>
+				<renderDuringTransitions>true</renderDuringTransitions>
+				<zIndex>0</zIndex>
+			</image>
+			<video name="backgroundVideo">
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<path>${rootpath}/_inc/videos/background.mp4</path>
+				<delay>0</delay>
+				<stationary>always</stationary>
+				<zIndex>0</zIndex>
+			</video>
+		</view>
+		<view name="gamelist">
+			<carousel name="gamelistCarousel">
+				<imageType>marquee</imageType>
+				<itemSize>0.105 0.2</itemSize>
+				<itemScale>1.3</itemScale>
+				<imageFit>contain</imageFit>
+			</carousel>
+			<image name="selectionCompositeBackground">
+				<pos>.017 .01</pos>
+				<cropSize>0.165 0.3</cropSize>
+				<imageType>fanart, screenshot, cover</imageType>
+				<zIndex>1</zIndex>
+			</image>
+			<image name="selectionCompositeOverlay">
+				<pos>.017 .01</pos>
+				<cropSize>0.165 0.3</cropSize>
+				<path>${rootpath}/_inc/images/screenshot_overlay.png</path>
+				<zIndex>2</zIndex>
+			</image>
+			<video name="metaVideo">
+				<pos>0.69 0.55</pos>
+				<size>.285 .36</size>
+				<origin>0 0</origin>
+				<imageType>miximage, screenshot, fanart, titlescreen</imageType>
+				<interpolation>linear</interpolation>
+				<gameselectorEntry>0</gameselectorEntry>
+				<scanlines>true</scanlines>
+				<delay>3</delay>
+				<zIndex>48</zIndex>
+			</video>
+		</view> 
+	</variant>
+	
+	<variant name="coverTheme_VideoBG">
+		<include>./variables.xml</include>
+		<include>./default_systems.xml</include>
+		<include>./default_gamelist.xml</include>
+		<include>./default_help.xml</include>
+		<view name="gamelist, system">
+			<image name="systembackgroundoverlay">
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<path>${rootpath}/_inc/images/video_background.png</path>
+				<stationary>always</stationary>
+				<renderDuringTransitions>true</renderDuringTransitions>
+				<zIndex>0</zIndex>
+			</image>
+			<video name="backgroundVideo">
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<path>${rootpath}/_inc/videos/background.mp4</path>
+				<delay>0</delay>
+				<stationary>always</stationary>
+				<zIndex>0</zIndex>
+			</video>
+		</view>
+		<view name="gamelist">
+			<carousel name="gamelistCarousel">
+				<imageType>cover</imageType>
+				<itemSize>0.11 0.2</itemSize>
+				<itemScale>1.5</itemScale>
+				<imageFit>cover</imageFit>
+			</carousel>
+			<video name="metaVideo">
+				<pos>0.69 0.55</pos>
+				<size>.285 .36</size>
+				<origin>0 0</origin>
+				<imageType>miximage, screenshot, fanart, titlescreen</imageType>
+				<interpolation>linear</interpolation>
+				<gameselectorEntry>0</gameselectorEntry>
+				<scanlines>true</scanlines>
+				<delay>3</delay>
+				<zIndex>48</zIndex>
+			</video>
+		</view> 
+	</variant>
+	
+	<variant name="simpleListTheme_VideoBG">
+		<include>./variables.xml</include>
+		<include>./default_systems.xml</include>
+		<include>./simple_list_gamelist.xml</include>
+		<include>./simple_list_help.xml</include>
+		<view name="gamelist, system">
+			<image name="systembackgroundoverlay">
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<path>${rootpath}/_inc/images/video_background.png</path>
+				<stationary>always</stationary>
+				<renderDuringTransitions>true</renderDuringTransitions>
+				<zIndex>0</zIndex>
+			</image>
+			<video name="backgroundVideo">
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<path>${rootpath}/_inc/videos/background.mp4</path>
+				<delay>0</delay>
+				<stationary>always</stationary>
+				<zIndex>0</zIndex>
+			</video>
+		</view>
+	</variant>
+
+</theme>

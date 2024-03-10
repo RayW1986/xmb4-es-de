@@ -1,0 +1,98 @@
+<!--
+	Variant - Immersive
+-->
+
+<theme> 
+	<include>./navigationsounds.xml</include>
+	<include>${rootpath}/_inc/systems/metadata-global/_default.xml</include>
+	<include>${rootpath}/_inc/systems/metadata-global/${system.theme}.xml</include>
+	<variables>
+		<rootpath>./</rootpath>
+	</variables>
+	<view name="system">
+		<image name="systembackgroundoverlay">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>${rootpath}/_inc/images/background.png</path>
+			<stationary>always</stationary>
+			<renderDuringTransitions>true</renderDuringTransitions>
+			<zIndex>0</zIndex>
+		</image>
+		<carousel name="systemCarousel">
+			<pos>0 0.25</pos>
+			<size>1 0.5</size>
+			<type>horizontal</type>
+			<horizontalOffset>-.303</horizontalOffset>
+			<verticalOffset>0</verticalOffset>
+			<defaultImage>${rootpath}/_inc/systems/xmb/${system.theme}.png</defaultImage>
+			<maxItemCount>9</maxItemCount>
+			<itemSize>0.11 0.2</itemSize>
+			<itemScale>2</itemScale>
+			<imageInterpolation>linear</imageInterpolation>
+			<itemVerticalAlignment>center</itemVerticalAlignment>
+			<color>00000000</color>
+			<textColor>BBBBBB</textColor>
+			<imageFit>cover</imageFit>
+			<fontSize>0.03</fontSize>
+			<letterCase>uppercase</letterCase>
+			<lineSpacing>1.1</lineSpacing>
+			<selectedItemMargins>.06 .06</selectedItemMargins>
+			<unfocusedItemOpacity>1</unfocusedItemOpacity>
+			<unfocusedItemDimming>.8</unfocusedItemDimming>
+			<fastScrolling>true</fastScrolling>
+			<itemTransitions>instant</itemTransitions>
+			<imageCornerRadius>0</imageCornerRadius>
+			<zIndex>3</zIndex>
+		</carousel>
+		<image name="systemoverlay">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>${rootpath}/_inc/images/system_overlay_simple.png</path>
+			<zIndex>2</zIndex>
+		</image>
+		<text name="playText">
+			<pos>0.094 0.707</pos>
+			<size>.58 .275</size>
+			<text>Browse</text>
+			<fontSize>0.045</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Medium.ttf</fontPath>
+		</text>
+		<text name="systemName">
+			<pos>0.33 0.29</pos>
+			<size>0.68 0.18</size>
+			<text>${systemName}</text>
+			<fontSize>0.05</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Medium.ttf</fontPath>
+			<container>true</container>
+		</text>
+		<text name="systemManufacturer">
+			<pos>0.33 0.35</pos>
+			<size>0.4 0.18</size>
+			<text>${systemManufacturer}</text>
+			<fontSize>0.035</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Light.ttf</fontPath>
+			<container>true</container>
+		</text>
+		<text name="gameCount">
+			<pos>0.33 0.615</pos>
+			<size>0.4 0.18</size>
+			<systemdata>gamecount</systemdata>
+			<fontSize>0.03</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Regular.ttf</fontPath>
+			<container>true</container>
+		</text>
+		
+	</view>
+</theme>

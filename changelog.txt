@@ -1,0 +1,8 @@
+Version 1.0.1
+ ~ Fixed a typo in the badge-collection.png filename
+ ~ Adjusted the backgrounds to be static when transitioning
+ ~ Added the option to use a 'wave' video background on each variant
+    -- Thanks to Charco for the suggestion on Discord
+
+Version 1.0.0
+ ~ Initial release

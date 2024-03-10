@@ -1,0 +1,265 @@
+<theme> 
+	<include>./navigationsounds.xml</include>
+	<include>${rootpath}/_inc/systems/metadata-global/_default.xml</include>
+	<include>${rootpath}/_inc/systems/metadata-global/${system.theme}.xml</include>
+	<variables>
+		<rootpath>./</rootpath>
+	</variables>
+	<view name="gamelist">
+		<!-- GAMELIST -->
+		<textlist name="gamelist">
+			<pos>.05 .2</pos>
+			<size>.21 .73</size>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Light.ttf</fontPath>
+			<fontSize>.0275</fontSize>
+			<selectorImagePath>${rootpath}/_inc/images/textlist_select.png</selectorImagePath>
+			<selectorColor>9AA7BE</selectorColor>
+			<selectedColor>000000</selectedColor>
+			<primaryColor>FFFFFF</primaryColor>
+			<secondaryColor>FFFFFF</secondaryColor>
+			<horizontalMargin>0.008333333333333</horizontalMargin>
+			<systemNameSuffix>false</systemNameSuffix>
+			<zIndex>2</zIndex>
+		</textlist>
+		
+		<!-- OVERLAY -->
+		<image name="overlay">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>${rootpath}/_inc/images/handheld_overlay.png</path>
+			<stationary>always</stationary>
+			<renderDuringTransitions>true</renderDuringTransitions>
+			<zIndex>1</zIndex>
+		</image>
+		
+		<!-- SYSTEM LOGO -->
+		<image name="systemLogo">
+			<tile>false</tile>
+			<pos>.155 .1</pos>
+			<origin>.5 .5</origin>
+			<maxSize>.16 .15</maxSize>
+			<path>${rootpath}/_inc/systems/logos/${system.theme}.svg</path>
+			<color>ffffff</color>
+			<interpolation>linear</interpolation>
+			<zIndex>50</zIndex>
+		</image>
+		
+		<!-- GAME DETAILS -->
+		<text name="gameName">
+			<pos>0.3 0.05</pos>
+			<size>0.65 0.05</size>
+			<metadata>name</metadata>
+			<fontSize>0.05</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Medium.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<text name="gameDeveloper">
+			<pos>0.3 0.11</pos>
+			<size>0.65 0.05</size>
+			<metadata>sourceSystemFullname</metadata>
+			<fontSize>0.035</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Light.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<rating name="metaRating">
+			<pos>0.3 0.16</pos>
+			<origin>0 0</origin>
+			<size>0 0.03</size>
+			<filledPath>${rootpath}/_inc/images/star_filled.svg</filledPath>
+			<unfilledPath>${rootpath}/_inc/images/star_unfilled.svg</unfilledPath>
+			<color>FFFFFF</color>
+			<zIndex>65</zIndex>
+		</rating>
+		<text name="metaSep1">
+			<pos>0.3875 0.15</pos>
+			<size>0.04 0.05</size>
+			<text>|</text>
+			<fontSize>0.03</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>center</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Light.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<datetime name="metaYear">
+			<metadata>releasedate</metadata>
+			<pos>0.396 0.15</pos>
+			<size>0.04 0.05</size>
+			<fontSize>0.03</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>center</verticalAlignment>
+			<horizontalAlignment>center</horizontalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Light.ttf</fontPath>
+			<defaultValue>-</defaultValue>
+			<format>%Y</format>
+		</datetime>		
+		<text name="metaSep2">
+			<pos>0.44 0.15</pos>
+			<size>0.04 0.05</size>
+			<text>|</text>
+			<fontSize>0.03</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>center</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Light.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<text name="metaGenre">
+			<pos>0.452 0.15</pos>
+			<size>0.65 0.05</size>
+			<metadata>genre</metadata>
+			<fontSize>0.03</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>center</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Light.ttf</fontPath>
+			<container>false</container>
+		</text>
+		
+		<!-- GAME MEDIA ASSETS -->
+		<image name="metaMarquee">
+			<tile>false</tile>
+			<pos>.43 .43</pos>
+			<origin>.5 .5</origin>
+			<maxSize>.23 .36</maxSize>
+			<imageType>marquee</imageType>
+			<interpolation>linear</interpolation>
+			<zIndex>48</zIndex>
+		</image>
+		<video name="metaVideo">
+			<pos>0.58 0.23</pos>
+			<cropSize>.3 .4</cropSize>
+			<origin>0 0</origin>
+			<imageType>screenshot</imageType>
+			<interpolation>linear</interpolation>
+			<gameselectorEntry>0</gameselectorEntry>
+			<scanlines>true</scanlines>
+			<delay>7</delay>
+			<zIndex>48</zIndex>
+		</video>
+		
+		<!-- GAME METADATA -->
+		<text name="textDeveloper">
+			<pos>0.31 0.7</pos>
+			<size>0.23 0.02</size>
+			<text>Developer</text>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Bold.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<text name="metaDeveloper">
+			<pos>0.31 0.73</pos>
+			<size>0.25 0.02</size>
+			<metadata>developer</metadata>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>C0C0C0</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Regular.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<text name="textPublisher">
+			<pos>0.31 0.78</pos>
+			<size>0.2 0.02</size>
+			<text>Publisher</text>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Bold.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<text name="metaPublisher">
+			<pos>0.31 0.81</pos>
+			<size>0.25 0.02</size>
+			<metadata>publisher</metadata>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>C0C0C0</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Regular.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<text name="textEmulator">
+			<pos>0.58 0.7</pos>
+			<size>0.2 0.02</size>
+			<text>Emulator or Core</text>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Bold.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<text name="metaEmulator">
+			<pos>0.58 0.73</pos>
+			<size>0.28 0.02</size>
+			<metadata>emulator</metadata>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>C0C0C0</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Regular.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<text name="textFilename">
+			<pos>0.58 0.78</pos>
+			<size>0.2 0.02</size>
+			<text>Filename</text>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Bold.ttf</fontPath>
+			<container>false</container>
+		</text>
+		<text name="metaFilename">
+			<pos>0.58 0.81</pos>
+			<size>0.28 0.02</size>
+			<metadata>physicalNameExtension</metadata>
+			<fontSize>0.025</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>C0C0C0</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${rootpath}/_inc/fonts/Ubuntu-Regular.ttf</fontPath>
+			<container>false</container>
+		</text>
+		
+		<!-- BADGES -->
+		<badges name="badges">
+			<pos>0.38 0.18</pos>
+			<size>.5 .018</size>
+			<origin>0 0</origin>
+			<horizontalAlignment>right</horizontalAlignment>
+			<direction>row</direction>
+			<lines>1</lines>
+			<itemsPerLine>9</itemsPerLine>
+			<itemMargin>-1 .01</itemMargin>
+			<slots>collection, folder, favorite, completed, kidgame, broken, controller, altemulator, manual</slots>
+			<customBadgeIcon badge="collection">${rootpath}/_inc/images/icons/badge-collection.png</customBadgeIcon>
+			<customBadgeIcon badge="folder">${rootpath}/_inc/images/icons/badge-folder.png</customBadgeIcon>
+			<customBadgeIcon badge="favorite">${rootpath}/_inc/images/icons/badge-favorite.png</customBadgeIcon>
+			<customBadgeIcon badge="completed">${rootpath}/_inc/images/icons/badge-completed.png</customBadgeIcon>
+			<customBadgeIcon badge="kidgame">${rootpath}/_inc/images/icons/badge-kidgame.png</customBadgeIcon>
+			<customBadgeIcon badge="broken">${rootpath}/_inc/images/icons/badge-broken.png</customBadgeIcon>
+			<customBadgeIcon badge="controller">${rootpath}/_inc/images/icons/badge-controller.png</customBadgeIcon>
+			<customBadgeIcon badge="altemulator">${rootpath}/_inc/images/icons/badge-altemulator.png</customBadgeIcon>
+			<customBadgeIcon badge="manual">${rootpath}/_inc/images/icons/badge-manual.png</customBadgeIcon>
+			<controllerIconColor>FFFFFF</controllerIconColor>
+			<controllerSize>1</controllerSize>
+			<zIndex>65</zIndex>
+		</badges>
+		
+				
+	</view> 
+</theme>
