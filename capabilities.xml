@@ -61,7 +61,7 @@
 		<selectable>true</selectable>
 		<transitions>instant</transitions>
 	</variant>
-	<variant name="defaultTheme_VideoBG">
+	<!--<variant name="defaultTheme_VideoBG">
 		<label>Composite Marquee (Animated Background)</label>
 		<selectable>true</selectable>
 		<transitions>slide</transitions>
@@ -75,6 +75,6 @@
 		<label>Simple Gamelist (Animated Background)</label>
 		<selectable>true</selectable>
 		<transitions>instant</transitions>
-	</variant>
+	</variant>-->
 	
 </themeCapabilities>
