@@ -59,7 +59,7 @@
 				<size>1 1</size>
 				<path>${rootpath}/_inc/images/background.png</path>
 				<stationary>always</stationary>
-				<renderDuringTransitions>true</renderDuringTransitions>
+				<renderDuringTransitions>false</renderDuringTransitions>
 				<zIndex>0</zIndex>
 			</image>
 		</view>
@@ -95,7 +95,7 @@
 				<size>1 1</size>
 				<path>${rootpath}/_inc/images/background.png</path>
 				<stationary>always</stationary>
-				<renderDuringTransitions>true</renderDuringTransitions>
+				<renderDuringTransitions>false</renderDuringTransitions>
 				<zIndex>0</zIndex>
 			</image>
 		</view>
