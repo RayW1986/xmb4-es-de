@@ -27,8 +27,6 @@
 			<pos>0 0</pos>
 			<size>1 1</size>
 			<path>${rootpath}/_inc/images/handheld_overlay.png</path>
-			<stationary>always</stationary>
-			<renderDuringTransitions>true</renderDuringTransitions>
 			<zIndex>1</zIndex>
 		</image>
 		

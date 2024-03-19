@@ -12,7 +12,6 @@
 			<pos>0 0</pos>
 			<size>1 1</size>
 			<path>${rootpath}/_inc/images/system_overlay.png</path>
-			
 			<zIndex>4</zIndex>
 		</image>
 		<image name="overlayMarquee">

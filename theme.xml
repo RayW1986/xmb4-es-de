@@ -100,7 +100,7 @@
 			</image>
 		</view>
 	</variant>
-	<!--
+	
 	<variant name="defaultTheme_VideoBG">
 		<include>./variables.xml</include>
 		<include>./default_systems.xml</include>
@@ -225,5 +225,5 @@
 			</video>
 		</view>
 	</variant>
-	-->
+
 </theme>

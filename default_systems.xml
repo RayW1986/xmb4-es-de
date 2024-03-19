@@ -40,7 +40,7 @@
 			<unfocusedItemOpacity>1</unfocusedItemOpacity>
 			<unfocusedItemDimming>.8</unfocusedItemDimming>
 			<fastScrolling>true</fastScrolling>
-			<itemTransitions>instant</itemTransitions>
+			<itemTransitions>slide</itemTransitions>
 			<imageCornerRadius>0</imageCornerRadius>
 			<zIndex>3</zIndex>
 		</carousel>
